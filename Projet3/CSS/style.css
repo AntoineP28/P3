@@ -1,0 +1,78 @@
+@media screen and (max-width: 480px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  header .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: white;
+  }
+  header .logo img {
+    width: 50%;
+    height: 20%;
+    margin-top: 1rem;
+  }
+  header .city {
+    margin-top: 1rem;
+    width: 100%;
+    -webkit-box-shadow: 0.2px -3px #0000001e;
+            box-shadow: 0.2px -3px #0000001e;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #F2F2F2;
+  }
+  header .city i {
+    width: 2rem;
+    height: 2rem;
+    font-size: larger;
+    margin-top: 1rem;
+  }
+  header .city p {
+    margin-right: 2rem;
+  }
+  #reservation_title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #f8f8f8;
+  }
+  #reservation_title p {
+    font-size: larger;
+  }
+  .btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(159deg, #fc78da 13%, #9356dc 100%);
+    border-radius: 20px 20px 20px 20px;
+  }
+  .btn a {
+    text-decoration: none;
+    font-size: larger;
+    color: white;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,70 @@
+@media screen and (max-width: 480px) {
+
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    
+    header{
+        .logo{
+            display: flex;
+            justify-content: center;
+            background-color: rgb(255, 255, 255);
+            img{
+                width: 50%;
+                height: 20%;
+                margin-top: 1rem;
+            }
+        }
+
+        .city{
+            margin-top: 1rem;
+            width: 100%;
+            box-shadow: 0.2px -3px #0000001e;
+            display: flex;
+            justify-content: center;
+            background-color: #F2F2F2;
+        }
+
+        .city i{
+            width: 2rem;
+            height: 2rem;
+            font-size: larger;
+            margin-top: 1rem;
+        }
+
+        .city p{
+            margin-right: 2rem;
+        }
+    }
+
+    #reservation_title{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        background-color: #f8f8f8;
+    }
+
+    #reservation_title p{
+        font-size: larger;
+    }
+    
+    .btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 50px;
+        background: linear-gradient(159deg, rgba(252,120,218,1) 13%, rgba(147,86,220,1) 100%);
+        border-radius: 20px 20px 20px 20px;
+    }
+
+    .btn a{
+        text-decoration: none;
+        font-size: larger;
+        color: white;
+    }
+
+    
+}
