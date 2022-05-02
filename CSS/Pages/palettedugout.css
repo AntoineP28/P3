@@ -1,0 +1,10 @@
+@media screen and (max-width: 480px) {
+  header img {
+    display: flex;
+    width: 50%;
+    margin-left: 5rem;
+    margin-top: 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=palettedugout.css.map */
