@@ -1,9 +1,237 @@
 @media screen and (max-width: 480px) {
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Arial, sans-serif;
+  }
+
+  header a {
+    position: absolute;
+    color: #353535;
+    font-size: larger;
+    cursor: pointer;
+    margin-top: 0.2rem;
+    margin-left: 1rem;
+  }
   header img {
     display: flex;
-    width: 50%;
-    margin-left: 5rem;
+    width: 45%;
+    margin-left: 6rem;
     margin-top: 1.5rem;
+  }
+
+  .container_menu img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    background-size: auto;
+    margin-top: 1rem;
+  }
+
+  .Lapalette {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    border-radius: 40px 40px 0px 0px;
+    margin-top: -3rem;
+    z-index: 1;
+  }
+
+  .Picture i {
+    display: flex;
+    position: absolute;
+    margin-left: 85%;
+    margin-top: 0.5rem;
+    font-size: x-large;
+  }
+  .Picture p {
+    margin-left: 1.5rem;
+    font-size: 1.7rem;
+    font-family: "Shrikhand", Arial, sans-serif;
+  }
+
+  .starter p, .Dessert p, .flat p {
+    font-size: x-large;
+    margin-left: 1.5rem;
+  }
+
+  .starter::after, .Dessert::after, .flat::after {
+    content: "";
+    width: 3rem;
+    height: 0.2rem;
+    background-color: #99e2d0;
+    position: absolute;
+    left: 1.7rem;
+    margin-top: -15px;
+  }
+
+  .starter_menu, .Dessert_menu3, .Dessert_menu2, .Dessert_menu, .flat_menu3, .flat_menu2, .flat_menu, .starter_menu4, .starter_menu3, .starter_menu2 {
+    margin-top: 2rem;
+    width: 92%;
+    background-color: #ffffff;
+    height: 75px;
+    margin-left: 1rem;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px 1px rgb(219, 219, 219);
+  }
+  .starter_menu .title, .Dessert_menu3 .title, .Dessert_menu2 .title, .Dessert_menu .title, .flat_menu3 .title, .flat_menu2 .title, .flat_menu .title, .starter_menu4 .title, .starter_menu3 .title, .starter_menu2 .title {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    padding-top: 1rem;
+    font-weight: bold;
+  }
+  .starter_menu .price, .Dessert_menu3 .price, .Dessert_menu2 .price, .Dessert_menu .price, .flat_menu3 .price, .flat_menu2 .price, .flat_menu .price, .starter_menu4 .price, .starter_menu3 .price, .starter_menu2 .price {
+    position: absolute;
+    margin-left: 80%;
+  }
+  .starter_menu .accompaniment, .Dessert_menu3 .accompaniment, .Dessert_menu2 .accompaniment, .Dessert_menu .accompaniment, .flat_menu3 .accompaniment, .flat_menu2 .accompaniment, .flat_menu .accompaniment, .starter_menu4 .accompaniment, .starter_menu3 .accompaniment, .starter_menu2 .accompaniment {
+    margin-left: 1rem;
+    font-size: small;
+    margin-top: 0.5rem;
+  }
+  .starter_menu p, .Dessert_menu3 p, .Dessert_menu2 p, .Dessert_menu p, .flat_menu3 p, .flat_menu2 p, .flat_menu p, .starter_menu4 p, .starter_menu3 p, .starter_menu2 p {
+    margin: 0.3rem;
+  }
+
+  .starter_menu2 {
+    margin-top: 1.5rem;
+  }
+  .starter_menu2 .title {
+    font-size: large;
+  }
+  .starter_menu2 .accompaniment {
+    font-size: 0.9rem;
+  }
+
+  .starter_menu3 {
+    margin-top: 1.5rem;
+  }
+  .starter_menu3 .accompaniment {
+    width: 240px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .flat {
+    margin-top: 3rem;
+  }
+
+  .flat::after {
+    content: "";
+    width: 2.9rem;
+    height: 0.2rem;
+    background-color: #99e2d0;
+    position: absolute;
+    left: 1.6rem;
+    margin-top: -20px;
+  }
+
+  .flat_menu .title {
+    font-size: medium;
+  }
+  .flat_menu .accompaniment {
+    width: 240px;
+    font-size: small;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .flat_menu2 {
+    margin-top: 1.5rem;
+  }
+  .flat_menu2 .title {
+    font-size: 1.1rem;
+  }
+  .flat_menu2 .accompaniment {
+    font-size: 0.9rem;
+  }
+
+  .flat_menu3 .accompaniment {
+    font-size: medium;
+  }
+
+  .Dessert {
+    margin-top: 3rem;
+  }
+
+  .Dessert::after {
+    content: "";
+    width: 3rem;
+    height: 0.2rem;
+    background-color: #99e2d0;
+    position: absolute;
+    left: 1.6rem;
+    margin-top: -20px;
+  }
+
+  .Dessert_menu2 .title {
+    font-size: 1.1rem;
+  }
+  .Dessert_menu2 .accompaniment {
+    font-size: 0.9rem;
+  }
+
+  .Dessert_menu3 .accompaniment {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    padding-right: 0.3rem;
+    margin-top: 3rem;
+    padding-left: 1rem;
+    margin-left: 5rem;
+    width: 165px;
+    height: 50px;
+    background: linear-gradient(159deg, rgb(252, 120, 218) 13%, rgb(147, 86, 220) 100%);
+    border-radius: 30px 30px 30px 30px;
+  }
+
+  .btn a {
+    display: flex;
+    position: absolute;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-size: larger;
+    color: white;
+  }
+
+  footer {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: 83rem;
+    background-color: #353535;
+  }
+  footer a {
+    color: white;
+  }
+  footer ul {
+    list-style-type: none;
+    padding-left: 1.5rem;
+    padding-top: 0.5rem;
+  }
+  footer ul li {
+    padding: 5px 0 5px 0;
+  }
+  footer ul .fa-utensils {
+    margin-right: 12px;
+  }
+  footer ul .fa-hands-helping {
+    margin-right: 5px;
+  }
+  footer h1 {
+    padding-top: 0.3rem;
+    display: flex;
+    height: 10px;
+    color: white;
+    font-size: larger;
+    margin-left: 1.5rem;
+    font-family: "Shrikhand", Arial, sans-serif;
   }
 }
 

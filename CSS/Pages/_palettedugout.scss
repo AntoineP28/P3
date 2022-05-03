@@ -1,11 +1,300 @@
 @media screen and (max-width: 480px) {
 
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto", Arial, sans-serif;
+    }
+
     header{
+
+        a{
+            position: absolute;
+            color: #353535;
+            font-size: larger;
+            cursor: pointer;
+            margin-top: 0.2rem;
+            margin-left: 1rem;
+        }
+
         img{
             display: flex;
-            width: 50%;
-            margin-left: 5rem;
+            width: 45%;
+            margin-left: 6rem;
             margin-top: 1.5rem;
         }
     }
+
+    .container_menu{
+        img{
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            background-size: auto;
+            margin-top: 1rem;
+        }
+
+    }
+
+    .Lapalette{
+        position: absolute;
+        width: 100%;
+        background-color: white;
+        border-radius: 40px 40px 0px 0px;
+        margin-top: -3rem;
+        z-index: 1;
+        
+    }
+
+    .Picture{
+
+        i{
+            display: flex;
+            position: absolute;
+            margin-left: 85%;
+            margin-top: 0.5rem;
+            font-size: x-large;
+        }
+
+        p{
+            margin-left: 1.5rem;
+            font-size: 1.7rem;
+            font-family: "Shrikhand", Arial, sans-serif;
+        }
+    }
+
+    .starter{
+        p{
+            font-size: x-large;
+            margin-left: 1.5rem;
+        }
+    }
+
+    .starter::after{
+        content: "";
+        width: 3rem;
+        height: 0.2rem;
+        background-color: #99e2d0;
+        position: absolute;
+        left: 1.7rem;
+        margin-top: -15px;
+    }
+
+    .starter_menu{
+        margin-top: 2rem;
+        width: 92%;
+        background-color: #ffffff;
+        height: 75px;
+        margin-left: 1rem;
+        border-radius: 15px;
+        box-shadow: 1px 1px 1px 1px rgb(219, 219, 219);
+
+        .title{
+            font-size: 1.2rem;
+            margin-left: 1rem;
+            padding-top: 1rem;
+            font-weight: bold;
+        }
+
+        .price{
+            position: absolute;
+            margin-left: 80%;
+        }
+
+        .accompaniment{
+            margin-left: 1rem;
+            font-size: small;
+            margin-top: 0.5rem;
+        }
+
+        p{
+            margin: 0.3rem;
+        }
+    }
+
+    .starter_menu2{
+        margin-top: 1.5rem;
+        @extend .starter_menu;
+
+        .title{
+            font-size: large;
+        }
+
+        .accompaniment{
+            font-size: 0.9rem;
+        }
+    }
+
+    .starter_menu3{
+        margin-top: 1.5rem;
+        @extend .starter_menu;
+        
+        .accompaniment{
+            width: 240px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    .starter_menu4{
+        @extend .starter_menu;
+    }
+
+    .flat{
+        @extend .starter;
+        margin-top: 3rem;
+    }
+
+    .flat::after{
+        content: "";
+        width: 2.9rem;
+        height: 0.2rem;
+        background-color: #99e2d0;
+        position: absolute;
+        left: 1.6rem;
+        margin-top: -20px;
+    }
+
+    .flat_menu{
+        @extend .starter_menu;
+
+        .title{
+            font-size: medium;
+        }
+
+        .accompaniment{
+            width: 240px;
+            font-size: small;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    .flat_menu2{
+        @extend .starter_menu;
+        margin-top: 1.5rem;
+
+        .title{
+            font-size: 1.1rem;
+            
+        }
+
+        .accompaniment{
+            font-size: 0.9rem;
+        }
+    }
+
+    .flat_menu3{
+        @extend .starter_menu;
+
+        .accompaniment{
+            font-size: medium;
+        }
+    }
+
+    .Dessert{
+        @extend .starter;
+        margin-top: 3rem;
+    }
+
+    .Dessert::after{
+        content: "";
+        width: 3rem;
+        height: 0.2rem;
+        background-color: #99e2d0;
+        position: absolute;
+        left: 1.6rem;
+        margin-top: -20px;
+    }
+
+    .Dessert_menu{
+        @extend .starter_menu;
+    }
+
+    .Dessert_menu2{
+        @extend .starter_menu;
+
+        .title{
+            font-size: 1.1rem;
+        }
+
+        .accompaniment{
+            font-size: 0.9rem;
+        }
+    }
+
+    .Dessert_menu3{
+        @extend .starter_menu;
+
+        .accompaniment{
+            font-size: 0.9rem;
+        }
+    }
+
+    .btn{
+        display: flex;
+        align-items: center;
+        padding-right: 0.3rem;
+        margin-top: 3rem;
+        padding-left: 1rem;
+        margin-left: 5rem;
+        width: 165px;
+        height: 50px;
+        background: linear-gradient(159deg, rgba(252,120,218,1) 13%, rgba(147,86,220,1) 100%);
+        border-radius: 30px 30px 30px 30px;
+    }
+
+    .btn a{
+        display: flex;
+        position: absolute;
+        text-decoration: none;
+        margin-left: 1.5rem;
+        font-size: larger;
+        color: white;
+    }
+
+    footer{
+        position: absolute;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-top: 83rem;
+        background-color: #353535;
+
+
+        a {
+            color: white;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 1.5rem;
+            padding-top: 0.5rem;
+        }
+
+        ul li {
+            padding: 5px 0 5px 0;
+        }
+
+        ul .fa-utensils {
+            margin-right: 12px;
+        }
+
+        ul .fa-hands-helping {
+            margin-right: 5px;
+        }
+
+            h1{
+                padding-top: 0.3rem;
+                display: flex;
+                height: 10px;
+                color: white;
+                font-size: larger;
+                margin-left: 1.5rem;
+                font-family: 'Shrikhand', Arial, sans-serif;
+            }
+    }
+
 }
