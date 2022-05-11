@@ -5,6 +5,7 @@ body{
     padding: 0;
     font-family: "Roboto", Arial, sans-serif;
 }
+
 @media screen and (max-width:425px) {
     header{
 
@@ -23,7 +24,7 @@ body{
             margin-left: 6rem;
             margin-top: 1.5rem;
         }
-}
+    }
 
 
     .container_menu{
@@ -31,7 +32,6 @@ body{
             width: 100%;
             height: 300px;
             object-fit: cover;
-            background-size: auto;
             margin-top: 1rem;
         }
     
@@ -258,7 +258,6 @@ body{
 }
 
 footer{
-    position: absolute;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -299,7 +298,7 @@ footer{
     }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 821px) {
 
     header{
 
@@ -350,19 +349,7 @@ footer{
         width: 30%;
 
     }
-
-    .Dessert::after{
-        content: "";
-        width: 3rem;
-        height: 0.2rem;
-        background-color: #99e2d0;
-        position: absolute;
-        margin-left: 70%;
-        left: 1.6rem;
-        margin-top: -20px;
-    }
     
-
     .Picture i{
         display: flex;
         margin-left: 90%;
@@ -398,10 +385,28 @@ footer{
         p{
             margin: 0.3rem;
         }
+    }
 
-        .Desserts{
-            margin-top: 0;
+    .flat_menu{
+
+        .title{
+            width: 240px;
+            font-size: larger;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
+    }
+
+    .starter::after{
+        content: "";
+        width: 2.9rem;
+        height: 0.2rem;
+        background-color: #99e2d0;
+        position: absolute;
+        margin-left: 1.5%;
+        left: 1.6rem;
+        margin-top: -20px;
     }
 
     .flat::after{
@@ -411,6 +416,17 @@ footer{
         background-color: #99e2d0;
         position: absolute;
         margin-left: 35%;
+        left: 1.6rem;
+        margin-top: -20px;
+    }
+
+    .Dessert::after{
+        content: "";
+        width: 3rem;
+        height: 0.2rem;
+        background-color: #99e2d0;
+        position: absolute;
+        margin-left: 68.3%;
         left: 1.6rem;
         margin-top: -20px;
     }
@@ -426,10 +442,11 @@ footer{
     .btn{
         margin-left: 40%;
         margin-right: 50%;
+        margin-top: 5rem;
     }
 
    footer{
-       margin-top: 40rem;
+       margin-top: 51rem;
    }
    
     .footer_center{
@@ -437,8 +454,67 @@ footer{
         margin-left: 40%;
     }
 
+    .footer_center h1{
+        font-size: x-large;
+    }
+
     .contacter ul li{
         display: flex;
         margin-left: 38%;
     }
+}
+
+@media screen and (min-width: 481px) and (max-width: 820px) {
+    header{
+
+        a{
+            position: absolute;
+            color: #353535;
+            font-size: x-large;
+            cursor: pointer;
+            margin-top: 1rem;
+            margin-left: 1rem;
+        }
+
+        img{
+            display: flex;
+            width: 45%;
+            margin-left: 25%;
+            margin-top: 1.5rem;
+        }
+    }   
+    
+    .container_menu{
+        img{
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            background-size: auto;
+            margin-top: 1rem;
+        }
+    
+    }
+
+    .btn{
+        display: flex;
+        align-items: center;
+        padding-right: 0.3rem;
+        margin-top: 3rem;
+        padding-left: 1rem;
+        margin-left: 35%;
+        width: 165px;
+        height: 50px;
+        background: linear-gradient(159deg, rgba(252,120,218,1) 13%, rgba(147,86,220,1) 100%);
+        border-radius: 30px 30px 30px 30px;
+    }
+    
+    .btn a{
+        display: flex;
+        position: absolute;
+        text-decoration: none;
+        margin-left: 1.5rem;
+        font-size: larger;
+        color: white;
+    }
+    
 }

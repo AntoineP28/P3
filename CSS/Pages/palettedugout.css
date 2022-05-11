@@ -24,7 +24,6 @@ body {
     width: 100%;
     height: 300px;
     object-fit: cover;
-    background-size: auto;
     margin-top: 1rem;
   }
 }
@@ -200,7 +199,6 @@ body {
 }
 
 footer {
-  position: absolute;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -234,7 +232,7 @@ footer h1 {
   font-family: "Shrikhand", Arial, sans-serif;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 821px) {
   header a {
     position: absolute;
     color: #353535;
@@ -277,17 +275,6 @@ footer h1 {
     width: 30%;
   }
 
-  .Dessert::after {
-    content: "";
-    width: 3rem;
-    height: 0.2rem;
-    background-color: #99e2d0;
-    position: absolute;
-    margin-left: 70%;
-    left: 1.6rem;
-    margin-top: -20px;
-  }
-
   .Picture i {
     display: flex;
     margin-left: 90%;
@@ -320,8 +307,24 @@ footer h1 {
   .starter_menu p, .starter_menu2 p, .starter_menu3 p, .starter_menu4 p, .flat_menu p, .flat_menu2 p, .flat_menu3 p, .Dessert_menu p, .Dessert_menu2 p, .Dessert_menu3 p {
     margin: 0.3rem;
   }
-  .starter_menu .Desserts, .starter_menu2 .Desserts, .starter_menu3 .Desserts, .starter_menu4 .Desserts, .flat_menu .Desserts, .flat_menu2 .Desserts, .flat_menu3 .Desserts, .Dessert_menu .Desserts, .Dessert_menu2 .Desserts, .Dessert_menu3 .Desserts {
-    margin-top: 0;
+
+  .flat_menu .title {
+    width: 240px;
+    font-size: larger;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .starter::after, .flat::after, .Dessert::after {
+    content: "";
+    width: 2.9rem;
+    height: 0.2rem;
+    background-color: #99e2d0;
+    position: absolute;
+    margin-left: 1.5%;
+    left: 1.6rem;
+    margin-top: -20px;
   }
 
   .flat::after {
@@ -331,6 +334,17 @@ footer h1 {
     background-color: #99e2d0;
     position: absolute;
     margin-left: 35%;
+    left: 1.6rem;
+    margin-top: -20px;
+  }
+
+  .Dessert::after {
+    content: "";
+    width: 3rem;
+    height: 0.2rem;
+    background-color: #99e2d0;
+    position: absolute;
+    margin-left: 68.3%;
     left: 1.6rem;
     margin-top: -20px;
   }
@@ -346,10 +360,11 @@ footer h1 {
   .btn {
     margin-left: 40%;
     margin-right: 50%;
+    margin-top: 5rem;
   }
 
   footer {
-    margin-top: 40rem;
+    margin-top: 51rem;
   }
 
   .footer_center {
@@ -357,9 +372,59 @@ footer h1 {
     margin-left: 40%;
   }
 
+  .footer_center h1 {
+    font-size: x-large;
+  }
+
   .contacter ul li {
     display: flex;
     margin-left: 38%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 820px) {
+  header a {
+    position: absolute;
+    color: #353535;
+    font-size: x-large;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+  header img {
+    display: flex;
+    width: 45%;
+    margin-left: 25%;
+    margin-top: 1.5rem;
+  }
+
+  .container_menu img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    background-size: auto;
+    margin-top: 1rem;
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    padding-right: 0.3rem;
+    margin-top: 3rem;
+    padding-left: 1rem;
+    margin-left: 35%;
+    width: 165px;
+    height: 50px;
+    background: linear-gradient(159deg, rgb(252, 120, 218) 13%, rgb(147, 86, 220) 100%);
+    border-radius: 30px 30px 30px 30px;
+  }
+
+  .btn a {
+    display: flex;
+    position: absolute;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-size: larger;
+    color: white;
   }
 }
 
