@@ -1,3 +1,45 @@
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes animation_page {
+  0% {
+    transform: translateY(10vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes heart {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+  1% {
+    display: block;
+    opacity: 1;
+  }
+  100% {
+    display: block;
+    opacity: 0;
+  }
+}
 body {
   margin: 0;
   padding: 0;
@@ -49,6 +91,50 @@ body {
   font-family: "Shrikhand", Arial, sans-serif;
 }
 
+.fa-heart:hover {
+  color: black;
+  cursor: pointer;
+  animation: heart 0.3s ease-in-out;
+  display: inline-block;
+  opacity: 1;
+  background: linear-gradient(to left, #9356dc, #e86edb, #ff79da);
+  background: -webkit-gradient(to left, #9356dc, #b35cdc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.Entree {
+  margin-bottom: 2.5rem;
+  animation-name: animation_page;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-timing-function: ease-in;
+  animation-direction: normal;
+}
+
+.checks {
+  height: 5rem;
+  display: flex;
+  margin-top: 1rem;
+  border-radius: 20px;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  overflow: hidden;
+  box-shadow: 2px 5px 8px 2px rgb(207, 207, 207);
+}
+.checks:hover .menuItem_confirmation {
+  width: 200px;
+}
+.checks:hover .menuItem_icon {
+  transform: rotate(180deg);
+  transition-duration: 500ms;
+}
+.checks .fa-check:before {
+  display: none;
+  margin-top: 6px;
+}
+
 .starter p, .Dessert p, .flat p {
   font-size: x-large;
   margin-left: 1.5rem;
@@ -64,52 +150,63 @@ body {
   margin-top: -15px;
 }
 
-.starter_menu, .Dessert_menu3, .Dessert_menu2, .Dessert_menu, .flat_menu3, .flat_menu2, .flat_menu, .starter_menu4, .starter_menu3, .starter_menu2 {
-  margin-top: 2rem;
+.starter_menu, .Dessert_menu3, .Dessert_menu2, .Dessert_menu, .flat_menu {
   width: 92%;
   background-color: #ffffff;
   height: 75px;
   margin-left: 1rem;
   border-radius: 15px;
-  box-shadow: 2px 2px 2px lightgrey;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-.starter_menu .title, .Dessert_menu3 .title, .Dessert_menu2 .title, .Dessert_menu .title, .flat_menu3 .title, .flat_menu2 .title, .flat_menu .title, .starter_menu4 .title, .starter_menu3 .title, .starter_menu2 .title {
+.starter_menu .title, .Dessert_menu3 .title, .Dessert_menu2 .title, .Dessert_menu .title, .flat_menu .title {
   font-size: 1.2rem;
   margin-left: 1rem;
   padding-top: 1rem;
   font-weight: bold;
 }
-.starter_menu .price, .Dessert_menu3 .price, .Dessert_menu2 .price, .Dessert_menu .price, .flat_menu3 .price, .flat_menu2 .price, .flat_menu .price, .starter_menu4 .price, .starter_menu3 .price, .starter_menu2 .price {
+.starter_menu .price, .Dessert_menu3 .price, .Dessert_menu2 .price, .Dessert_menu .price, .flat_menu .price {
   position: absolute;
-  margin-left: 80%;
+  margin-left: 75%;
 }
-.starter_menu .accompaniment, .Dessert_menu3 .accompaniment, .Dessert_menu2 .accompaniment, .Dessert_menu .accompaniment, .flat_menu3 .accompaniment, .flat_menu2 .accompaniment, .flat_menu .accompaniment, .starter_menu4 .accompaniment, .starter_menu3 .accompaniment, .starter_menu2 .accompaniment {
+.starter_menu .accompaniment, .Dessert_menu3 .accompaniment, .Dessert_menu2 .accompaniment, .Dessert_menu .accompaniment, .flat_menu .accompaniment {
   margin-left: 1rem;
   font-size: small;
   margin-top: 0.5rem;
 }
-.starter_menu p, .Dessert_menu3 p, .Dessert_menu2 p, .Dessert_menu p, .flat_menu3 p, .flat_menu2 p, .flat_menu p, .starter_menu4 p, .starter_menu3 p, .starter_menu2 p {
+.starter_menu p, .Dessert_menu3 p, .Dessert_menu2 p, .Dessert_menu p, .flat_menu p {
   margin: 0.3rem;
 }
 
-.starter_menu2 {
-  margin-top: 1.5rem;
-}
-.starter_menu2 .title {
-  font-size: large;
-}
-.starter_menu2 .accompaniment {
-  font-size: 0.9rem;
+.menuItem_confirmation {
+  background-color: #99e2d0;
+  margin: -1rem -5rem -1rem 1rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
 }
 
-.starter_menu3 {
-  margin-top: 1.5rem;
+.menuItem_wrapIcon {
+  height: 1.6rem;
+  width: 1.6 rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
 }
-.starter_menu3 .accompaniment {
-  width: 240px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+
+.menuItem_icon {
+  color: #99e2d0;
+}
+
+.fa, .fas {
+  font-weight: 900;
 }
 
 .flat {
@@ -126,6 +223,15 @@ body {
   margin-top: -20px;
 }
 
+.Plats {
+  margin-bottom: 2.5rem;
+  animation-name: animation_page;
+  animation-duration: 1.2s;
+  animation-delay: 0.8s;
+  animation-timing-function: ease-in;
+  animation-direction: normal;
+}
+
 .flat_menu .title {
   font-size: medium;
 }
@@ -135,20 +241,6 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.flat_menu2 {
-  margin-top: 1.5rem;
-}
-.flat_menu2 .title {
-  font-size: 1.1rem;
-}
-.flat_menu2 .accompaniment {
-  font-size: 0.9rem;
-}
-
-.flat_menu3 .accompaniment {
-  font-size: medium;
 }
 
 .Dessert {
@@ -163,6 +255,15 @@ body {
   position: absolute;
   left: 1.6rem;
   margin-top: -20px;
+}
+
+.Desserts {
+  margin-bottom: 2.5rem;
+  animation-name: animation_page;
+  animation-duration: 1.5s;
+  animation-delay: 1s;
+  animation-timing-function: ease-in;
+  animation-direction: normal;
 }
 
 .Dessert_menu2 .title {
@@ -232,7 +333,7 @@ footer h1 {
   font-family: "Shrikhand", Arial, sans-serif;
 }
 
-@media screen and (min-width: 821px) {
+@media screen and (min-width: 821px) and (max-width: 1080px) {
   header a {
     position: absolute;
     color: #353535;
@@ -280,31 +381,32 @@ footer h1 {
     margin-left: 90%;
   }
 
-  .starter_menu, .starter_menu2, .starter_menu3, .starter_menu4, .flat_menu, .flat_menu2, .flat_menu3, .Dessert_menu, .Dessert_menu2, .Dessert_menu3 {
-    margin-top: 4rem;
+  .starter_menu, .flat_menu, .Dessert_menu, .Dessert_menu2, .Dessert_menu3 {
     width: 100%;
-    background-color: #ffffff;
     height: 75px;
     margin-left: 0;
     border-radius: 15px;
-    box-shadow: 2px 2px 2px lightgrey;
   }
-  .starter_menu .title, .starter_menu2 .title, .starter_menu3 .title, .starter_menu4 .title, .flat_menu .title, .flat_menu2 .title, .flat_menu3 .title, .Dessert_menu .title, .Dessert_menu2 .title, .Dessert_menu3 .title {
-    font-size: 1.2rem;
+  .starter_menu .title, .flat_menu .title, .Dessert_menu .title, .Dessert_menu2 .title, .Dessert_menu3 .title {
+    font-size: 1rem;
     margin-left: 1rem;
     padding-top: 1rem;
     font-weight: bold;
   }
-  .starter_menu .price, .starter_menu2 .price, .starter_menu3 .price, .starter_menu4 .price, .flat_menu .price, .flat_menu2 .price, .flat_menu3 .price, .Dessert_menu .price, .Dessert_menu2 .price, .Dessert_menu3 .price {
+  .starter_menu .price, .flat_menu .price, .Dessert_menu .price, .Dessert_menu2 .price, .Dessert_menu3 .price {
     position: absolute;
-    margin-left: 26%;
+    margin-left: 23%;
   }
-  .starter_menu .accompaniment, .starter_menu2 .accompaniment, .starter_menu3 .accompaniment, .starter_menu4 .accompaniment, .flat_menu .accompaniment, .flat_menu2 .accompaniment, .flat_menu3 .accompaniment, .Dessert_menu .accompaniment, .Dessert_menu2 .accompaniment, .Dessert_menu3 .accompaniment {
+  .starter_menu .accompaniment, .flat_menu .accompaniment, .Dessert_menu .accompaniment, .Dessert_menu2 .accompaniment, .Dessert_menu3 .accompaniment {
+    width: 195px;
     margin-left: 1rem;
     font-size: small;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     margin-top: 0.5rem;
   }
-  .starter_menu p, .starter_menu2 p, .starter_menu3 p, .starter_menu4 p, .flat_menu p, .flat_menu2 p, .flat_menu3 p, .Dessert_menu p, .Dessert_menu2 p, .Dessert_menu3 p {
+  .starter_menu p, .flat_menu p, .Dessert_menu p, .Dessert_menu2 p, .Dessert_menu3 p {
     margin: 0.3rem;
   }
 

@@ -1,4 +1,4 @@
-
+@import "_Animation.scss";
 
 body{
     margin: 0;
@@ -65,6 +65,54 @@ body{
     }
 }
 
+.fa-heart:hover{
+    color: black;
+    cursor: pointer;
+    animation: heart 0.3s ease-in-out;
+    display: inline-block;
+    opacity: 1;
+    background: linear-gradient(to left, #9356dc, #e86edb, #ff79da);
+    background: -webkit-gradient(to left, #9356dc, #b35cdc, #ff79da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.Entree{
+    margin-bottom: 2.5rem;
+    animation-name: animation_page;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in;
+    animation-direction: normal;
+}
+
+.checks{
+    height: 5rem;
+    display: flex;
+    margin-top: 1rem;
+    border-radius: 20px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    overflow: hidden;
+    box-shadow: 2px 5px 8px 2px rgb(207, 207, 207);
+
+
+    &:hover .menuItem_confirmation{
+        width: 200px;
+    }
+
+    &:hover .menuItem_icon{
+        transform: rotate(180deg);
+        transition-duration: 500ms;
+    }
+
+    .fa-check:before{
+        display: none;
+        margin-top: 6px;
+    }
+}
+
 .starter{
     p{
         font-size: x-large;
@@ -83,13 +131,14 @@ body{
 }
 
 .starter_menu{
-    margin-top: 2rem;
     width: 92%;
     background-color: #ffffff;
     height: 75px;
     margin-left: 1rem;
     border-radius: 15px;
-    box-shadow: 2px 2px 2px lightgrey;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 
     .title{
         font-size: 1.2rem;
@@ -100,7 +149,7 @@ body{
 
     .price{
         position: absolute;
-        margin-left: 80%;
+        margin-left: 75%;
     }
 
     .accompaniment{
@@ -114,33 +163,34 @@ body{
     }
 }
 
-.starter_menu2{
-    margin-top: 1.5rem;
-    @extend .starter_menu;
-
-    .title{
-        font-size: large;
-    }
-
-    .accompaniment{
-        font-size: 0.9rem;
-    }
+.menuItem_confirmation{
+    background-color: #99e2d0;
+    margin: -1rem -5rem -1rem 1rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.5s;
 }
 
-.starter_menu3{
-    margin-top: 1.5rem;
-    @extend .starter_menu;
-        
-    .accompaniment{
-        width: 240px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
+.menuItem_wrapIcon {
+    height: 1.6rem;
+    width: 1.6 rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    transform: rotate(180deg);
+    transition-duration: 0.5s;
 }
 
-.starter_menu4{
-    @extend .starter_menu;
+.menuItem_icon{
+    color:#99e2d0;
+}
+
+.fa, .fas{
+    font-weight: 900;
 }
 
 .flat{
@@ -156,6 +206,15 @@ body{
     position: absolute;
     left: 1.6rem;
     margin-top: -20px;
+}
+
+.Plats{
+    margin-bottom: 2.5rem;
+    animation-name: animation_page;
+    animation-duration: 1.2s;
+    animation-delay: 0.8s;
+    animation-timing-function: ease-in;
+    animation-direction: normal;
 }
 
 .flat_menu{
@@ -174,32 +233,10 @@ body{
     }
 }
 
-.flat_menu2{
-    @extend .starter_menu;
-    margin-top: 1.5rem;
-
-    .title{
-        font-size: 1.1rem;
-            
-    }
-
-    .accompaniment{
-        font-size: 0.9rem;
-    }
+.Dessert{
+    @extend .starter;
+    margin-top: 3rem;
 }
-
-.flat_menu3{
-    @extend .starter_menu;
-
-    .accompaniment{
-        font-size: medium;
-    }
-}
-
-    .Dessert{
-        @extend .starter;
-        margin-top: 3rem;
-    }
 
 .Dessert::after{
     content: "";
@@ -209,6 +246,15 @@ body{
     position: absolute;
     left: 1.6rem;
     margin-top: -20px;
+}
+
+.Desserts{
+    margin-bottom: 2.5rem;
+    animation-name: animation_page;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in;
+    animation-direction: normal;
 }
 
 .Dessert_menu{
@@ -298,7 +344,7 @@ footer{
     }
 }
 
-@media screen and (min-width: 821px) {
+@media screen and (min-width: 821px) and (max-width: 1080px) {
 
     header{
 
@@ -356,16 +402,13 @@ footer{
     }
     
     .starter_menu{
-        margin-top: 4rem;
         width: 100%;
-        background-color: #ffffff;
         height: 75px;
         margin-left: 0;
         border-radius: 15px;
-        box-shadow: 2px 2px 2px lightgrey;
     
         .title{
-            font-size: 1.2rem;
+            font-size: 1.0rem;
             margin-left: 1rem;
             padding-top: 1rem;
             font-weight: bold;
@@ -373,12 +416,16 @@ footer{
     
         .price{
             position: absolute;
-            margin-left: 26%;
+            margin-left: 23%;
         }
     
         .accompaniment{
+            width: 195px;
             margin-left: 1rem;
             font-size: small;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
             margin-top: 0.5rem;
         }
     

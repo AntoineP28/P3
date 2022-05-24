@@ -399,6 +399,7 @@ footer{
         opacity: 1;
         background: linear-gradient(to left, #9356dc, #e86edb, #ff79da);
         background: -webkit-gradient(to left, #9356dc, #b35cdc, #ff79da);
+        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-weight: bold;
     }
