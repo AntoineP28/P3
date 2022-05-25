@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @keyframes rotate {
   from {
     -webkit-transform: rotate(0deg);
@@ -46,6 +47,13 @@ body {
   font-family: "Roboto", Arial, sans-serif;
 }
 
+#Main {
+  max-width: 425px;
+  min-height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
 @media screen and (max-width: 425px) {
   header a {
     position: absolute;
@@ -70,7 +78,7 @@ body {
   }
 }
 .Lapalette {
-  position: absolute;
+  position: relative;
   width: 100%;
   background-color: white;
   border-radius: 40px 40px 0px 0px;
@@ -82,15 +90,19 @@ body {
   display: flex;
   position: absolute;
   margin-left: 85%;
-  margin-top: 0.5rem;
+  margin-top: 2rem;
   font-size: x-large;
 }
 .Picture p {
   margin-left: 1.5rem;
   font-size: 1.7rem;
+  padding-top: 1.5rem;
   font-family: "Shrikhand", Arial, sans-serif;
 }
 
+/***************************************************************************************************/
+/*                                      Animation coeur                                            */
+/***************************************************************************************************/
 .fa-heart:hover {
   color: black;
   cursor: pointer;
@@ -102,15 +114,6 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
-}
-
-.Entree {
-  margin-bottom: 2.5rem;
-  animation-name: animation_page;
-  animation-duration: 1s;
-  animation-delay: 0.5s;
-  animation-timing-function: ease-in;
-  animation-direction: normal;
 }
 
 /***************************************************************************************************/
@@ -177,6 +180,18 @@ body {
   font-weight: 900;
 }
 
+/***************************************************************************************************/
+/*                                          Menu Entrée                                            */
+/***************************************************************************************************/
+.Entree {
+  margin-bottom: 2.5rem;
+  animation-name: animation_page;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-timing-function: ease-in;
+  animation-direction: normal;
+}
+
 .starter p, .Dessert p, .flat p {
   font-size: x-large;
   margin-left: 1.5rem;
@@ -203,11 +218,13 @@ body {
   overflow: hidden;
 }
 .starter_menu .title, .Dessert_menu3 .title, .Dessert_menu2 .title, .Dessert_menu .title, .flat_menu .title {
-  width: 100%;
   font-size: 1.2rem;
   margin-left: 1rem;
   margin-top: 1rem;
   font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .starter_menu .price, .Dessert_menu3 .price, .Dessert_menu2 .price, .Dessert_menu .price, .flat_menu .price {
   margin-left: 88%;
@@ -219,15 +236,20 @@ body {
   flex-grow: 1;
 }
 .starter_menu .accompaniment, .Dessert_menu3 .accompaniment, .Dessert_menu2 .accompaniment, .Dessert_menu .accompaniment, .flat_menu .accompaniment {
-  width: 230px;
   margin-left: 1rem;
   font-size: small;
   margin-top: -1.5rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .starter_menu p, .Dessert_menu3 p, .Dessert_menu2 p, .Dessert_menu p, .flat_menu p {
   margin: 0.3rem;
 }
 
+/***************************************************************************************************/
+/*                                          Plats du menu                                          */
+/***************************************************************************************************/
 .flat {
   margin-top: 3rem;
 }
@@ -257,11 +279,11 @@ body {
 .flat_menu .accompaniment {
   width: 240px;
   font-size: small;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
+/***************************************************************************************************/
+/*                                          Desserts du menu                                       */
+/***************************************************************************************************/
 .Dessert {
   margin-top: 3rem;
 }
@@ -296,6 +318,9 @@ body {
   font-size: 0.9rem;
 }
 
+/***************************************************************************************************/
+/*                                          Bouton                                                 */
+/***************************************************************************************************/
 .btn {
   display: flex;
   align-items: center;
@@ -318,12 +343,15 @@ body {
   color: white;
 }
 
+/***************************************************************************************************/
+/*                                          Bas de page                                            */
+/***************************************************************************************************/
 footer {
   position: absolute;
   width: 100%;
   margin: 0;
   padding: 0;
-  margin-top: 80rem;
+  margin-top: 2rem;
   background-color: #353535;
 }
 footer a {
@@ -353,6 +381,9 @@ footer h1 {
   font-family: "Shrikhand", Arial, sans-serif;
 }
 
+/***************************************************************************************************/
+/*                                      Media query Desktop                                    */
+/***************************************************************************************************/
 @media screen and (min-width: 821px) and (max-width: 1080px) {
   header a {
     position: absolute;
@@ -486,7 +517,11 @@ footer h1 {
   }
 
   footer {
-    margin-top: 51rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-top: 50px;
+    height: 50px;
   }
 
   .footer_center {

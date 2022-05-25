@@ -8,6 +8,10 @@ body{
     font-family: 'Roboto', Arial, sans-serif;
 }
 
+/***************************************************************************************************/
+/*                                      Animation chargement                                       */
+/***************************************************************************************************/
+
 #block_chargement {
     background-color: white;
     display: flex;
@@ -707,6 +711,87 @@ footer{
     .secondpresentation{
         margin-top: 0;
     }
+}
 
+/***************************************************************************************************/
+/*                                          Format Laptop                                                 */
+/***************************************************************************************************/
 
+@media screen and (min-width: 1025px) and (max-width: 1920px) {
+
+    .title_restaurant{
+        display: flex;
+        margin-top: 5rem;
+        h1{
+            margin-left: 45%;
+        }
+    }
+
+    .Presentation{
+        width: 95%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10rem;
+        margin-left: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .firstpresentation{
+        background-color: white;
+        height: 230px;
+        border-radius: 20px 20px 20px 20px;
+        a{
+            text-decoration: none;
+            color: inherit;
+
+            p{
+                margin-left: 1rem;
+                font-size: larger;
+            }
+
+        }
+
+        .card_title  h2{
+            height: 10px;
+            margin-left: 1rem;
+            font-size: larger;
+        }
+
+        .card_title i{
+            position: absolute;
+            font-size: x-large;
+            margin-left: 22%;
+        }
+
+        .new{
+            display: flex;
+            position: absolute;
+            width: 80px;
+            height: 30px;
+            margin-left: 25rem;
+            margin-top: 1rem;
+            font-size: medium;
+            color: #2e977d;
+            font-weight: bold;
+            justify-content: center;
+            align-items: center;
+            background-color: $tertiary-color;
+        }
+
+        img{
+            width: 500px;
+            object-fit: cover;
+            height: 150px;
+            border-radius: 20px 20px 0px 0px;
+        }
+    }
+
+    .thirdpresentation{
+        margin-top: 0;
+    }
+
+    .fourthpresentation{
+        margin-top: 0;
+    }
 }
