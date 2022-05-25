@@ -113,6 +113,9 @@ body {
   animation-direction: normal;
 }
 
+/***************************************************************************************************/
+/*                                      Animation check                                     */
+/***************************************************************************************************/
 .checks {
   height: 5rem;
   display: flex;
@@ -131,8 +134,47 @@ body {
   transition-duration: 500ms;
 }
 .checks .fa-check:before {
-  display: none;
-  margin-top: 6px;
+  display: flex;
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  margin-top: 3px;
+}
+
+.menuItem_confirmation {
+  background-color: #99e2d0;
+  margin: -1rem -5rem -1rem 1rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
+}
+
+.menuItem_wrapIcon {
+  height: 2.5rem;
+  width: 1.6 rem;
+  background-color: #fff;
+  display: flex;
+  margin-right: 50%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+}
+
+.menuItem_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #99e2d0;
+}
+
+.fa, .fas {
+  font-weight: 900;
 }
 
 .starter p, .Dessert p, .flat p {
@@ -161,52 +203,29 @@ body {
   overflow: hidden;
 }
 .starter_menu .title, .Dessert_menu3 .title, .Dessert_menu2 .title, .Dessert_menu .title, .flat_menu .title {
+  width: 100%;
   font-size: 1.2rem;
   margin-left: 1rem;
-  padding-top: 1rem;
+  margin-top: 1rem;
   font-weight: bold;
 }
 .starter_menu .price, .Dessert_menu3 .price, .Dessert_menu2 .price, .Dessert_menu .price, .flat_menu .price {
-  position: absolute;
-  margin-left: 75%;
+  margin-left: 88%;
+  display: flex;
+  margin-top: 15px;
+}
+.starter_menu .price:hover, .Dessert_menu3 .price:hover, .Dessert_menu2 .price:hover, .Dessert_menu .price:hover, .flat_menu .price:hover {
+  transition-duration: 0.5s;
+  flex-grow: 1;
 }
 .starter_menu .accompaniment, .Dessert_menu3 .accompaniment, .Dessert_menu2 .accompaniment, .Dessert_menu .accompaniment, .flat_menu .accompaniment {
+  width: 230px;
   margin-left: 1rem;
   font-size: small;
-  margin-top: 0.5rem;
+  margin-top: -1.5rem;
 }
 .starter_menu p, .Dessert_menu3 p, .Dessert_menu2 p, .Dessert_menu p, .flat_menu p {
   margin: 0.3rem;
-}
-
-.menuItem_confirmation {
-  background-color: #99e2d0;
-  margin: -1rem -5rem -1rem 1rem;
-  width: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition-duration: 0.5s;
-}
-
-.menuItem_wrapIcon {
-  height: 1.6rem;
-  width: 1.6 rem;
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100px;
-  transform: rotate(180deg);
-  transition-duration: 0.5s;
-}
-
-.menuItem_icon {
-  color: #99e2d0;
-}
-
-.fa, .fas {
-  font-weight: 900;
 }
 
 .flat {
@@ -300,10 +319,11 @@ body {
 }
 
 footer {
+  position: absolute;
   width: 100%;
   margin: 0;
   padding: 0;
-  margin-top: 83rem;
+  margin-top: 80rem;
   background-color: #353535;
 }
 footer a {
