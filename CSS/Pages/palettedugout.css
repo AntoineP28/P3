@@ -211,7 +211,7 @@ body {
   overflow: hidden;
 }
 .starter_menu .title, .Dessert_menu3 .title, .Dessert_menu2 .title, .Dessert_menu .title, .flat_menu .title {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-left: 1rem;
   margin-top: 1rem;
   font-weight: bold;
@@ -268,7 +268,7 @@ body {
 }
 
 .flat_menu .title {
-  font-size: medium;
+  font-size: large;
 }
 .flat_menu .accompaniment {
   width: 70%;
@@ -506,33 +506,36 @@ footer h1 {
     border-radius: 15px;
   }
   .starter_menu .title, .flat_menu .title, .Dessert_menu .title, .Dessert_menu2 .title, .Dessert_menu3 .title {
+    width: 70%;
     font-size: 1rem;
     margin-left: 1rem;
     font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .starter_menu .price, .flat_menu .price, .Dessert_menu .price, .Dessert_menu2 .price, .Dessert_menu3 .price {
-    position: absolute;
-    margin-left: 23%;
+    margin-left: 80%;
+    display: flex;
   }
   .starter_menu .price:hover, .flat_menu .price:hover, .Dessert_menu .price:hover, .Dessert_menu2 .price:hover, .Dessert_menu3 .price:hover {
     transition-duration: 0.5s;
     flex-grow: 1;
   }
   .starter_menu .accompaniment, .flat_menu .accompaniment, .Dessert_menu .accompaniment, .Dessert_menu2 .accompaniment, .Dessert_menu3 .accompaniment {
-    width: 195px;
+    width: 70%;
     margin-left: 1rem;
     font-size: small;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-top: 0.5rem;
   }
   .starter_menu p, .flat_menu p, .Dessert_menu p, .Dessert_menu2 p, .Dessert_menu3 p {
     margin: 0.3rem;
   }
 
   .flat_menu .title {
-    width: 240px;
+    width: 70%;
     font-size: larger;
     white-space: nowrap;
     overflow: hidden;

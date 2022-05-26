@@ -194,7 +194,7 @@ body{
     overflow: hidden;
 
     .title{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         margin-left: 1rem;
         margin-top: 1rem;
         font-weight: bold;
@@ -261,7 +261,7 @@ body{
     @extend .starter_menu;
 
     .title{
-        font-size: medium;
+        font-size: large;
     }
 
     .accompaniment{
@@ -541,14 +541,18 @@ footer{
         border-radius: 15px;
     
         .title{
+            width: 70%;
             font-size: 1.0rem;
             margin-left: 1rem;
             font-weight: bold;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     
         .price{
-            position: absolute;
-            margin-left: 23%;
+            margin-left: 80%;
+            display: flex;
         }
 
         .price:hover{
@@ -557,13 +561,12 @@ footer{
         }
     
         .accompaniment{
-            width: 195px;
+            width: 70%;
             margin-left: 1rem;
             font-size: small;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            margin-top: 0.5rem;
         }
     
         p{
@@ -574,7 +577,7 @@ footer{
     .flat_menu{
 
         .title{
-            width: 240px;
+            width: 70%;
             font-size: larger;
             white-space: nowrap;
             overflow: hidden;

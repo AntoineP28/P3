@@ -47,6 +47,10 @@ body{
     z-index: 100000;
 }
 
+/***************************************************************************************************/
+/*                                      Téléphone                                                  */
+/***************************************************************************************************/
+
 @media screen and (max-width: 425px) {
     
 
@@ -62,7 +66,6 @@ body{
             }
         }
     }
-
     .city{
         margin-top: 1rem;
         width: 100%;
@@ -82,7 +85,62 @@ body{
     .city p{
         margin-right: 2rem;
     }
+
+    .firstpresentation{
+        background-color: white;
+        height: 230px;
+        border-radius: 20px 20px 20px 20px;
+        a{
+            text-decoration: none;
+            color: inherit;
+
+            p{
+                margin-left: 1rem;
+                font-size: larger;
+            }
+
+        }
+
+        .card_title  h2{
+            height: 10px;
+            margin-left: 1rem;
+            font-size: larger;
+        }
+
+        .card_title i{
+            position: absolute;
+            font-size: x-large;
+            margin-left: 75%;
+            margin-top: 4%;
+        }
+
+        .new{
+            display: flex;
+            position: absolute;
+            width: 80px;
+            height: 30px;
+            margin-left: 14rem;
+            margin-top: 1rem;
+            font-size: medium;
+            color: #2e977d;
+            font-weight: bold;
+            justify-content: center;
+            align-items: center;
+            background-color: $tertiary-color;
+        }
+
+        img{
+            width: 320px;
+            object-fit: cover;
+            height: 150px;
+            border-radius: 20px 20px 0px 0px;
+        }
+    }
 }
+
+/***************************************************************************************************/
+/*                                      Tête de page                                               */
+/***************************************************************************************************/
 
 #reservation_title{
     display: flex;
@@ -114,6 +172,10 @@ body{
     font-size: medium;
     color: white;
 }
+
+/***************************************************************************************************/
+/*                                      Fonctionnement                                             */
+/***************************************************************************************************/
 
 .Functioning{
 
@@ -198,6 +260,10 @@ body{
     color: $primary-color;
 }
 
+/***************************************************************************************************/
+/*                                      Section Restaurant                                         */
+/***************************************************************************************************/
+
 .restaurant{
     background-color: $base-color;
     height: 69rem;
@@ -217,58 +283,7 @@ body{
     margin-left: 5%;
     margin-right: 1%;
 }
-@media screen and (max-width: 425px) {
-    .firstpresentation{
-        background-color: white;
-        height: 230px;
-        border-radius: 20px 20px 20px 20px;
-        a{
-            text-decoration: none;
-            color: inherit;
 
-            p{
-                margin-left: 1rem;
-                font-size: larger;
-            }
-
-        }
-
-        .card_title  h2{
-            height: 10px;
-            margin-left: 1rem;
-            font-size: larger;
-        }
-
-        .card_title i{
-            position: absolute;
-            font-size: x-large;
-            margin-left: 75%;
-            margin-top: 4%;
-        }
-
-        .new{
-            display: flex;
-            position: absolute;
-            width: 80px;
-            height: 30px;
-            margin-left: 14rem;
-            margin-top: 1rem;
-            font-size: medium;
-            color: #2e977d;
-            font-weight: bold;
-            justify-content: center;
-            align-items: center;
-            background-color: $tertiary-color;
-        }
-
-        img{
-            width: 320px;
-            object-fit: cover;
-            height: 150px;
-            border-radius: 20px 20px 0px 0px;
-        }
-    }
-}
 .secondpresentation{
     @extend .firstpresentation;
     margin-top: 1rem;
@@ -283,6 +298,10 @@ body{
     @extend .firstpresentation;
     margin-top: 1rem;
 }
+
+/***************************************************************************************************/
+/*                                      Bas de page                                                */
+/***************************************************************************************************/
 
 footer{
     position: absolute;
@@ -714,7 +733,7 @@ footer{
 }
 
 /***************************************************************************************************/
-/*                                          Format Laptop                                                 */
+/*                                          Format Laptop                                          */
 /***************************************************************************************************/
 
 @media screen and (min-width: 1025px) and (max-width: 1920px) {
