@@ -330,6 +330,10 @@ body {
   border-radius: 30px 30px 30px 30px;
 }
 
+.btn:hover {
+  filter: brightness(110%);
+}
+
 .btn a {
   display: flex;
   position: absolute;
@@ -621,6 +625,66 @@ footer h1 {
     width: 45%;
     margin-left: 25%;
     margin-top: 1.5rem;
+  }
+
+  .checks {
+    height: 5rem;
+    display: flex;
+    margin-top: 1rem;
+    border-radius: 20px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    overflow: hidden;
+    box-shadow: 2px 5px 8px 2px rgb(207, 207, 207);
+  }
+  .checks:hover .menuItem_confirmation {
+    width: 200px;
+  }
+  .checks:hover .menuItem_icon {
+    transform: rotate(180deg);
+    transition-duration: 500ms;
+  }
+  .checks .fa-check:before {
+    display: flex;
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin-top: 3px;
+  }
+
+  .menuItem_confirmation {
+    background-color: #99e2d0;
+    margin: -1rem -5rem -1rem 3rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.5s;
+  }
+
+  .menuItem_wrapIcon {
+    height: 2.5rem;
+    background-color: #fff;
+    display: flex;
+    margin-right: 50%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transform: rotate(180deg);
+    transition-duration: 0.5s;
+  }
+
+  .menuItem_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #99e2d0;
+  }
+
+  .fa, .fas {
+    font-weight: 900;
   }
 
   .container_menu img {
