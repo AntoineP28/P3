@@ -765,7 +765,7 @@ footer h1 {
   .firstpresentation .card_title i, .secondpresentation .card_title i, .thirdpresentation .card_title i, .fourthpresentation .card_title i {
     position: absolute;
     font-size: x-large;
-    margin-left: 430px;
+    margin-left: 440px;
   }
   .firstpresentation .new, .secondpresentation .new, .thirdpresentation .new, .fourthpresentation .new {
     display: flex;
