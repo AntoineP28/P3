@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @keyframes rotate {
   from {
     -webkit-transform: rotate(0deg);
@@ -84,6 +85,9 @@ body {
   z-index: 100000;
 }
 
+/***************************************************************************************************/
+/*                                      Téléphone                                                  */
+/***************************************************************************************************/
 @media screen and (max-width: 425px) {
   header .logo {
     display: flex;
@@ -115,7 +119,68 @@ body {
   .city p {
     margin-right: 2rem;
   }
+
+  .fa-heart:hover {
+    color: black;
+    cursor: pointer;
+    animation: heart 0.3s ease-in-out;
+    display: inline-block;
+    opacity: 1;
+    background: linear-gradient(to left, #9356dc, #e86edb, #ff79da);
+    background: -webkit-gradient(to left, #9356dc, #b35cdc, #ff79da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+
+  .firstpresentation, .fourthpresentation, .thirdpresentation, .secondpresentation {
+    background-color: white;
+    height: 230px;
+    border-radius: 20px 20px 20px 20px;
+  }
+  .firstpresentation a, .fourthpresentation a, .thirdpresentation a, .secondpresentation a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .firstpresentation a p, .fourthpresentation a p, .thirdpresentation a p, .secondpresentation a p {
+    margin-left: 1rem;
+    font-size: larger;
+  }
+  .firstpresentation .card_title h2, .fourthpresentation .card_title h2, .thirdpresentation .card_title h2, .secondpresentation .card_title h2 {
+    height: 10px;
+    margin-left: 1rem;
+    font-size: larger;
+  }
+  .firstpresentation .card_title i, .fourthpresentation .card_title i, .thirdpresentation .card_title i, .secondpresentation .card_title i {
+    position: absolute;
+    font-size: x-large;
+    margin-left: 75%;
+    margin-top: 4%;
+  }
+  .firstpresentation .new, .fourthpresentation .new, .thirdpresentation .new, .secondpresentation .new {
+    display: flex;
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    margin-left: 14rem;
+    margin-top: 1rem;
+    font-size: medium;
+    color: #2e977d;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    background-color: #98e2cf;
+  }
+  .firstpresentation img, .fourthpresentation img, .thirdpresentation img, .secondpresentation img {
+    width: 320px;
+    object-fit: cover;
+    height: 150px;
+    border-radius: 20px 20px 0px 0px;
+  }
 }
+/***************************************************************************************************/
+/*                                      Tête de page                                               */
+/***************************************************************************************************/
 #reservation_title {
   display: flex;
   height: 260px;
@@ -147,7 +212,10 @@ body {
   color: white;
 }
 
-.Functioning h1 {
+/***************************************************************************************************/
+/*                                      Fonctionnement                                             */
+/***************************************************************************************************/
+.Functioning h2 {
   margin-left: 1rem;
 }
 
@@ -215,6 +283,9 @@ body {
   color: #9356DC;
 }
 
+/***************************************************************************************************/
+/*                                      Section Restaurant                                         */
+/***************************************************************************************************/
 .restaurant {
   background-color: #F2F2F2;
   height: 69rem;
@@ -224,7 +295,7 @@ body {
   display: flex;
   margin-top: 5rem;
 }
-.title_restaurant h1 {
+.title_restaurant h2 {
   margin-left: 1.5rem;
   padding-top: 1rem;
 }
@@ -235,52 +306,6 @@ body {
   margin-right: 1%;
 }
 
-@media screen and (max-width: 425px) {
-  .firstpresentation, .fourthpresentation, .thirdpresentation, .secondpresentation {
-    background-color: white;
-    height: 230px;
-    border-radius: 20px 20px 20px 20px;
-  }
-  .firstpresentation a, .fourthpresentation a, .thirdpresentation a, .secondpresentation a {
-    text-decoration: none;
-    color: inherit;
-  }
-  .firstpresentation a p, .fourthpresentation a p, .thirdpresentation a p, .secondpresentation a p {
-    margin-left: 1rem;
-    font-size: larger;
-  }
-  .firstpresentation .card_title h2, .fourthpresentation .card_title h2, .thirdpresentation .card_title h2, .secondpresentation .card_title h2 {
-    height: 10px;
-    margin-left: 1rem;
-    font-size: larger;
-  }
-  .firstpresentation .card_title i, .fourthpresentation .card_title i, .thirdpresentation .card_title i, .secondpresentation .card_title i {
-    position: absolute;
-    font-size: x-large;
-    margin-left: 75%;
-    margin-top: 4%;
-  }
-  .firstpresentation .new, .fourthpresentation .new, .thirdpresentation .new, .secondpresentation .new {
-    display: flex;
-    position: absolute;
-    width: 80px;
-    height: 30px;
-    margin-left: 14rem;
-    margin-top: 1rem;
-    font-size: medium;
-    color: #2e977d;
-    font-weight: bold;
-    justify-content: center;
-    align-items: center;
-    background-color: #98e2cf;
-  }
-  .firstpresentation img, .fourthpresentation img, .thirdpresentation img, .secondpresentation img {
-    width: 320px;
-    object-fit: cover;
-    height: 150px;
-    border-radius: 20px 20px 0px 0px;
-  }
-}
 .secondpresentation {
   margin-top: 1rem;
 }
@@ -293,6 +318,9 @@ body {
   margin-top: 1rem;
 }
 
+/***************************************************************************************************/
+/*                                      Bas de page                                                */
+/***************************************************************************************************/
 footer {
   position: absolute;
   margin: 0;
@@ -671,7 +699,7 @@ footer h1 {
   }
 }
 /***************************************************************************************************/
-/*                                          Format Laptop                                                 */
+/*                                          Format Laptop                                          */
 /***************************************************************************************************/
 @media screen and (min-width: 1025px) and (max-width: 1920px) {
   .title_restaurant {

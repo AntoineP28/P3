@@ -151,7 +151,6 @@ body {
 
 .menuItem_wrapIcon {
   height: 2.5rem;
-  width: 1.6 rem;
   background-color: #fff;
   display: flex;
   margin-right: 50%;
@@ -421,7 +420,6 @@ footer h1 {
 
   .menuItem_wrapIcon {
     height: 2.5rem;
-    width: 1.6 rem;
     background-color: #fff;
     display: flex;
     margin-right: 50%;
