@@ -104,7 +104,7 @@ body{
     }
 
     &:hover .menuItem_icon{
-        transform: rotate(180deg);
+        transform: rotate(730deg);
         transition-duration: 500ms;
     }
 
@@ -137,7 +137,7 @@ body{
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    transform: rotate(180deg);
+    transform: rotate(360deg);
     transition-duration: 0.5s;
 }
 
@@ -423,7 +423,7 @@ footer{
         }
     
         &:hover .menuItem_icon{
-            transform: rotate(180deg);
+            transform: rotate(730deg);
             transition-duration: 500ms;
         }
     
@@ -440,7 +440,7 @@ footer{
     
     .menuItem_confirmation{
         background-color: #99e2d0;
-        margin: -1rem -5rem -1rem 1rem;
+        margin: -1rem -3rem -1rem 5rem;
         width: 4rem;
         display: flex;
         align-items: center;
@@ -456,7 +456,7 @@ footer{
         align-items: center;
         justify-content: center;
         border-radius: 50%;
-        transform: rotate(180deg);
+        transform: rotate(360deg);
         transition-duration: 0.5s;
     }
     
@@ -553,7 +553,7 @@ footer{
         }
     
         .price{
-            margin-left: 80%;
+            margin-left: 85%;
             display: flex;
         }
 
@@ -655,6 +655,193 @@ footer{
     }
 }
 
+
+@media screen and (min-width: 1081px) and (max-width: 2300px){
+
+    header{
+
+        a{
+            position: absolute;
+            color: #353535;
+            font-size: x-large;
+            cursor: pointer;
+            margin-top: 1rem;
+            margin-left: 1rem;
+        }
+
+        img{
+            display: flex;
+            width: 30%;
+            margin-left: 35%;
+            margin-top: 1.5rem;
+        }
+    }
+
+    .container_menu{
+        img{
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            margin-top: 1rem;
+        }
+    
+    }
+
+    .Lapalette{
+        position: relative;
+         width: 100%;
+         background-color: white;
+         border-radius: 40px 40px 0px 0px;
+         margin-top: -3rem;
+         z-index: 1;
+             
+    }
+
+    .Menu{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .Entree{
+        width: 30%;
+    }
+
+    .Plats{
+        width: 30%;
+
+    }
+
+    .Desserts{
+        width: 30%;
+
+    }
+    
+    .Picture i{
+        display: flex;
+        margin-left: 90%;
+    }
+    
+    .starter_menu{
+        width: 100%;
+        height: 75px;
+        margin-left: 0;
+        border-radius: 15px;
+    
+        .title{
+            width: 70%;
+            font-size: 1.0rem;
+            margin-left: 1rem;
+            font-weight: bold;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    
+        .price{
+            margin-left: 85%;
+            display: flex;
+        }
+
+        .price:hover{
+            transition-duration: 0.5s;
+            flex-grow: 1;
+        }
+    
+        .accompaniment{
+            width: 70%;
+            margin-left: 1rem;
+            font-size: small;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    
+        p{
+            margin: 0.3rem;
+        }
+    }
+
+    .flat_menu{
+
+        .title{
+            width: 70%;
+            font-size: larger;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    .starter::after{
+        content: "";
+        width: 2.9rem;
+        height: 0.2rem;
+        background-color: #99e2d0;
+        position: absolute;
+        margin-left: 1.5%;
+        left: 1.6rem;
+        margin-top: -20px;
+    }
+
+    .flat::after{
+        content: "";
+        width: 2.9rem;
+        height: 0.2rem;
+        background-color: #99e2d0;
+        position: absolute;
+        margin-left: 35%;
+        left: 1.6rem;
+        margin-top: -20px;
+    }
+
+    .Dessert::after{
+        content: "";
+        width: 3rem;
+        height: 0.2rem;
+        background-color: #99e2d0;
+        position: absolute;
+        margin-left: 68.3%;
+        left: 1.6rem;
+        margin-top: -20px;
+    }
+
+    .Dessert{
+        margin-top: 0;
+    }
+
+    .flat{
+        margin-top: 0;
+    }
+
+    .btn{
+        margin-left: 40%;
+        margin-right: 50%;
+        margin-top: 5rem;
+    }
+
+   footer{
+       position: absolute;
+       width: 100%;
+       margin-top: 2rem;
+   }
+   
+    .footer_center{
+        display: flex;
+        margin-left: 40%;
+    }
+
+    .footer_center h1{
+        font-size: x-large;
+    }
+
+    .contacter ul li{
+        display: flex;
+        margin-left: 38%;
+    }   
+}
+
 @media screen and (min-width: 481px) and (max-width: 820px) {
     header{
 
@@ -691,7 +878,7 @@ footer{
         }
     
         &:hover .menuItem_icon{
-            transform: rotate(180deg);
+            transform: rotate(730deg);
             transition-duration: 500ms;
         }
     
@@ -724,7 +911,7 @@ footer{
         align-items: center;
         justify-content: center;
         border-radius: 50%;
-        transform: rotate(180deg);
+        transform: rotate(360deg);
         transition-duration: 0.5s;
     }
     

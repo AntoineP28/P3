@@ -371,16 +371,16 @@ footer{
 /*                                      Media query desktop                                      */
 /***************************************************************************************************/
 
-@media screen and (min-width: 821px) {
+@media screen and (min-width: 821px) and (max-width: 1025px) {
 
     header{
         .logo{
             display: flex;
-            justify-content: center;
             background-color: rgb(255, 255, 255);
             img{
                 width: 25%;
                 height: 20%;
+                margin-left: 40%;
                 margin-top: 1rem;
             }
         }
@@ -465,14 +465,14 @@ footer{
 
     .restaurant
     {
-        height: 55rem;
+        height: 50rem;
     }
 
     .Presentation{
         width: 95%;
         display: flex;
         flex-wrap: wrap;
-        gap: 10rem;
+        gap: 5rem;
     }
 
     .fa-heart:hover{
@@ -512,7 +512,7 @@ footer{
         .card_title i{
             position: absolute;
             font-size: x-large;
-            margin-left: 33%;
+            margin-left: 21rem;
             margin-top: 0.5rem;
         }
 
@@ -724,7 +724,7 @@ footer{
         .card_title i{
             position: absolute;
             font-size: x-large;
-            margin-left: 270px;
+            margin-left: 10rem;
             margin-top: 0.5rem;
         }
 
@@ -773,7 +773,57 @@ footer{
 /*                                          Format Laptop                                          */
 /***************************************************************************************************/
 
-@media screen and (min-width: 1025px) and (max-width: 1920px) {
+@media screen and (min-width: 1026px) and (max-width: 1920px) {
+
+    header{
+        .logo{
+            display: flex;
+            background-color: rgb(255, 255, 255);
+            img{
+                width: 25%;
+                height: 20%;
+                margin-left: 37%;
+                margin-top: 1rem;
+            }
+        }
+
+        .city{
+            margin-top: 1rem;
+            width: 100%;
+            box-shadow: 0.2px -3px #0000001e;
+            display: flex;
+            justify-content: center;
+            background-color: #F2F2F2;
+        }
+    
+        .city i{
+            width: 2rem;
+            height: 2rem;
+            font-size: larger;
+            margin-top: 1rem;
+        }
+    
+        .city p{
+            margin-right: 2rem;
+        }
+    }
+
+    .btn{
+        display: flex;
+        align-items: center;
+        padding-right: 0.3rem;
+        padding-left: 1.2rem;
+        margin-left: 10rem;
+        margin-top: 3rem;
+        width: 200px;
+        height: 50px;
+        background: linear-gradient(159deg, rgba(252,120,218,1) 13%, rgba(147,86,220,1) 100%);
+        border-radius: 30px 30px 30px 30px;
+    }
+
+    .restaurant{
+        height: 50rem;
+    }
 
     .title_restaurant{
         display: flex;
@@ -788,13 +838,28 @@ footer{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 10rem;
+        gap: 7rem;
         margin-left: 1.5rem;
         margin-top: 2rem;
     }
 
+    .fa-heart:hover{
+        color: black;
+        cursor: pointer;
+        animation: heart 0.3s ease-in-out;
+        display: inline-block;
+        opacity: 1;
+        background: linear-gradient(to left, #9356dc, #e86edb, #ff79da);
+        background: -webkit-gradient(to left, #9356dc, #b35cdc, #ff79da);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+    }
+    
+
     .firstpresentation{
         background-color: white;
+        width: 28.8rem;
         height: 230px;
         border-radius: 20px 20px 20px 20px;
         a{
@@ -817,7 +882,7 @@ footer{
         .card_title i{
             position: absolute;
             font-size: x-large;
-            margin-left: 440px;
+            margin-left: 25rem;
         }
 
         .new{
@@ -825,7 +890,7 @@ footer{
             position: absolute;
             width: 80px;
             height: 30px;
-            margin-left: 25rem;
+            margin-left: 22rem;
             margin-top: 1rem;
             font-size: medium;
             color: #2e977d;
@@ -836,11 +901,15 @@ footer{
         }
 
         img{
-            width: 500px;
+            width: 28.8rem;
             object-fit: cover;
             height: 150px;
             border-radius: 20px 20px 0px 0px;
         }
+    }
+
+    .secondpresentation{
+        margin-top: 0;
     }
 
     .thirdpresentation{

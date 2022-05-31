@@ -370,15 +370,15 @@ footer h1 {
 /***************************************************************************************************/
 /*                                      Media query desktop                                      */
 /***************************************************************************************************/
-@media screen and (min-width: 821px) {
+@media screen and (min-width: 821px) and (max-width: 1025px) {
   header .logo {
     display: flex;
-    justify-content: center;
     background-color: rgb(255, 255, 255);
   }
   header .logo img {
     width: 25%;
     height: 20%;
+    margin-left: 40%;
     margin-top: 1rem;
   }
   header .city {
@@ -449,14 +449,14 @@ footer h1 {
   }
 
   .restaurant {
-    height: 55rem;
+    height: 50rem;
   }
 
   .Presentation {
     width: 95%;
     display: flex;
     flex-wrap: wrap;
-    gap: 10rem;
+    gap: 5rem;
   }
 
   .fa-heart:hover {
@@ -493,7 +493,7 @@ footer h1 {
   .firstpresentation .card_title i, .secondpresentation .card_title i, .thirdpresentation .card_title i, .fourthpresentation .card_title i {
     position: absolute;
     font-size: x-large;
-    margin-left: 33%;
+    margin-left: 21rem;
     margin-top: 0.5rem;
   }
   .firstpresentation .new, .secondpresentation .new, .thirdpresentation .new, .fourthpresentation .new {
@@ -682,7 +682,7 @@ footer h1 {
   .firstpresentation .card_title i, .secondpresentation .card_title i, .thirdpresentation .card_title i, .fourthpresentation .card_title i {
     position: absolute;
     font-size: x-large;
-    margin-left: 270px;
+    margin-left: 10rem;
     margin-top: 0.5rem;
   }
   .firstpresentation .fa-heart:hover, .secondpresentation .fa-heart:hover, .thirdpresentation .fa-heart:hover, .fourthpresentation .fa-heart:hover {
@@ -725,7 +725,52 @@ footer h1 {
 /***************************************************************************************************/
 /*                                          Format Laptop                                          */
 /***************************************************************************************************/
-@media screen and (min-width: 1025px) and (max-width: 1920px) {
+@media screen and (min-width: 1026px) and (max-width: 1920px) {
+  header .logo {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+  }
+  header .logo img {
+    width: 25%;
+    height: 20%;
+    margin-left: 37%;
+    margin-top: 1rem;
+  }
+  header .city {
+    margin-top: 1rem;
+    width: 100%;
+    box-shadow: 0.2px -3px rgba(0, 0, 0, 0.1176470588);
+    display: flex;
+    justify-content: center;
+    background-color: #F2F2F2;
+  }
+  header .city i {
+    width: 2rem;
+    height: 2rem;
+    font-size: larger;
+    margin-top: 1rem;
+  }
+  header .city p {
+    margin-right: 2rem;
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    padding-right: 0.3rem;
+    padding-left: 1.2rem;
+    margin-left: 10rem;
+    margin-top: 3rem;
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(159deg, rgb(252, 120, 218) 13%, rgb(147, 86, 220) 100%);
+    border-radius: 30px 30px 30px 30px;
+  }
+
+  .restaurant {
+    height: 50rem;
+  }
+
   .title_restaurant {
     display: flex;
     margin-top: 5rem;
@@ -739,13 +784,27 @@ footer h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10rem;
+    gap: 7rem;
     margin-left: 1.5rem;
     margin-top: 2rem;
   }
 
+  .fa-heart:hover {
+    color: black;
+    cursor: pointer;
+    animation: heart 0.3s ease-in-out;
+    display: inline-block;
+    opacity: 1;
+    background: linear-gradient(to left, #9356dc, #e86edb, #ff79da);
+    background: -webkit-gradient(to left, #9356dc, #b35cdc, #ff79da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+
   .firstpresentation, .secondpresentation, .thirdpresentation, .fourthpresentation {
     background-color: white;
+    width: 28.8rem;
     height: 230px;
     border-radius: 20px 20px 20px 20px;
   }
@@ -765,14 +824,14 @@ footer h1 {
   .firstpresentation .card_title i, .secondpresentation .card_title i, .thirdpresentation .card_title i, .fourthpresentation .card_title i {
     position: absolute;
     font-size: x-large;
-    margin-left: 440px;
+    margin-left: 25rem;
   }
   .firstpresentation .new, .secondpresentation .new, .thirdpresentation .new, .fourthpresentation .new {
     display: flex;
     position: absolute;
     width: 80px;
     height: 30px;
-    margin-left: 25rem;
+    margin-left: 22rem;
     margin-top: 1rem;
     font-size: medium;
     color: #2e977d;
@@ -782,10 +841,14 @@ footer h1 {
     background-color: #98e2cf;
   }
   .firstpresentation img, .secondpresentation img, .thirdpresentation img, .fourthpresentation img {
-    width: 500px;
+    width: 28.8rem;
     object-fit: cover;
     height: 150px;
     border-radius: 20px 20px 0px 0px;
+  }
+
+  .secondpresentation {
+    margin-top: 0;
   }
 
   .thirdpresentation {

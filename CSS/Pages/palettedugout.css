@@ -126,7 +126,7 @@ body {
   width: 200px;
 }
 .checks:hover .menuItem_icon {
-  transform: rotate(180deg);
+  transform: rotate(730deg);
   transition-duration: 500ms;
 }
 .checks .fa-check:before {
@@ -157,7 +157,7 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  transform: rotate(180deg);
+  transform: rotate(360deg);
   transition-duration: 0.5s;
 }
 
@@ -399,7 +399,7 @@ footer h1 {
     width: 200px;
   }
   .checks:hover .menuItem_icon {
-    transform: rotate(180deg);
+    transform: rotate(730deg);
     transition-duration: 500ms;
   }
   .checks .fa-check:before {
@@ -414,7 +414,7 @@ footer h1 {
 
   .menuItem_confirmation {
     background-color: #99e2d0;
-    margin: -1rem -5rem -1rem 1rem;
+    margin: -1rem -3rem -1rem 5rem;
     width: 4rem;
     display: flex;
     align-items: center;
@@ -430,7 +430,7 @@ footer h1 {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    transform: rotate(180deg);
+    transform: rotate(360deg);
     transition-duration: 0.5s;
   }
 
@@ -517,7 +517,186 @@ footer h1 {
     text-overflow: ellipsis;
   }
   .starter_menu .price, .flat_menu .price, .Dessert_menu .price, .Dessert_menu2 .price, .Dessert_menu3 .price {
-    margin-left: 80%;
+    margin-left: 85%;
+    display: flex;
+  }
+  .starter_menu .price:hover, .flat_menu .price:hover, .Dessert_menu .price:hover, .Dessert_menu2 .price:hover, .Dessert_menu3 .price:hover {
+    transition-duration: 0.5s;
+    flex-grow: 1;
+  }
+  .starter_menu .accompaniment, .flat_menu .accompaniment, .Dessert_menu .accompaniment, .Dessert_menu2 .accompaniment, .Dessert_menu3 .accompaniment {
+    width: 70%;
+    margin-left: 1rem;
+    font-size: small;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .starter_menu p, .flat_menu p, .Dessert_menu p, .Dessert_menu2 p, .Dessert_menu3 p {
+    margin: 0.3rem;
+  }
+
+  .flat_menu .title {
+    width: 70%;
+    font-size: larger;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .starter::after, .flat::after, .Dessert::after {
+    content: "";
+    width: 2.9rem;
+    height: 0.2rem;
+    background-color: #99e2d0;
+    position: absolute;
+    margin-left: 1.5%;
+    left: 1.6rem;
+    margin-top: -20px;
+  }
+
+  .flat::after {
+    content: "";
+    width: 2.9rem;
+    height: 0.2rem;
+    background-color: #99e2d0;
+    position: absolute;
+    margin-left: 35%;
+    left: 1.6rem;
+    margin-top: -20px;
+  }
+
+  .Dessert::after {
+    content: "";
+    width: 3rem;
+    height: 0.2rem;
+    background-color: #99e2d0;
+    position: absolute;
+    margin-left: 68.3%;
+    left: 1.6rem;
+    margin-top: -20px;
+  }
+
+  .Dessert {
+    margin-top: 0;
+  }
+
+  .flat {
+    margin-top: 0;
+  }
+
+  .btn {
+    margin-left: 40%;
+    margin-right: 50%;
+    margin-top: 5rem;
+  }
+
+  footer {
+    position: absolute;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .footer_center {
+    display: flex;
+    margin-left: 40%;
+  }
+
+  .footer_center h1 {
+    font-size: x-large;
+  }
+
+  .contacter ul li {
+    display: flex;
+    margin-left: 38%;
+  }
+}
+@media screen and (min-width: 1081px) and (max-width: 2300px) {
+  header a {
+    position: absolute;
+    color: #353535;
+    font-size: x-large;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+  header img {
+    display: flex;
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 1.5rem;
+  }
+
+  .container_menu img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin-top: 1rem;
+  }
+
+  .Lapalette {
+    position: relative;
+    width: 100%;
+    background-color: white;
+    border-radius: 40px 40px 0px 0px;
+    margin-top: -3rem;
+    z-index: 1;
+  }
+
+  .fa-heart:hover {
+    color: black;
+    cursor: pointer;
+    animation: heart 0.3s ease-in-out;
+    display: inline-block;
+    opacity: 1;
+    background: linear-gradient(to left, #9356dc, #e86edb, #ff79da);
+    background: -webkit-gradient(to left, #9356dc, #b35cdc, #ff79da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+
+  .Menu {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .Entree {
+    width: 30%;
+  }
+
+  .Plats {
+    width: 30%;
+  }
+
+  .Desserts {
+    width: 30%;
+  }
+
+  .Picture i {
+    display: flex;
+    margin-left: 90%;
+  }
+
+  .starter_menu, .flat_menu, .Dessert_menu, .Dessert_menu2, .Dessert_menu3 {
+    width: 100%;
+    height: 75px;
+    margin-left: 0;
+    border-radius: 15px;
+  }
+  .starter_menu .title, .flat_menu .title, .Dessert_menu .title, .Dessert_menu2 .title, .Dessert_menu3 .title {
+    width: 70%;
+    font-size: 1rem;
+    margin-left: 1rem;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .starter_menu .price, .flat_menu .price, .Dessert_menu .price, .Dessert_menu2 .price, .Dessert_menu3 .price {
+    margin-left: 85%;
     display: flex;
   }
   .starter_menu .price:hover, .flat_menu .price:hover, .Dessert_menu .price:hover, .Dessert_menu2 .price:hover, .Dessert_menu3 .price:hover {
@@ -641,7 +820,7 @@ footer h1 {
     width: 200px;
   }
   .checks:hover .menuItem_icon {
-    transform: rotate(180deg);
+    transform: rotate(730deg);
     transition-duration: 500ms;
   }
   .checks .fa-check:before {
@@ -672,7 +851,7 @@ footer h1 {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    transform: rotate(180deg);
+    transform: rotate(360deg);
     transition-duration: 0.5s;
   }
 
